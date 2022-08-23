@@ -34,15 +34,15 @@
             <nav class="nav">
               <ul class="nav__list">
                 <li class="nav__list__item">
-                  <a href="#" class="nav__link"
-                    ><span class="span__text">Главная</span></a
+                  <a href="#" class="nav__link nav_active" id="main">Главная</a>
+                </li>
+                <li class="nav__list__item">
+                  <a href="#" class="nav__link" id="registration"
+                    >Регистрация</a
                   >
                 </li>
                 <li class="nav__list__item">
-                  <a href="#" class="nav__link">Регистрация</a>
-                </li>
-                <li class="nav__list__item">
-                  <a href="#" class="nav__link">Войти</a>
+                  <a href="#" class="nav__link" id="add">Войти</a>
                 </li>
               </ul>
             </nav>
@@ -59,123 +59,285 @@
         </div>
       </header>
 
-      <div class="container">
-        <div class="main__content">
-          <div class="info__programs">
-            <h1>Сдать программу в архив:</h1>
-            <form class="block_form" id="form" action="#" novalidate>
-              <div class="text-field">
-                <label class="text-field__label" for="firstname"
-                  >Номер УП*</label
-                >
-                <input
-                  class="text-field__input"
-                  type="text"
-                  name="firstname"
-                  id="firstname"
-                  required
-                />
-                <div class="text-field__message"></div>
-              </div>
-              <div class="text-field">
-                <label class="text-field__label" for="firstname"
-                  >Номер операции*</label
-                >
-                <input
-                  class="text-field__input"
-                  type="text"
-                  name="firstname"
-                  id="firstname"
-                  required
-                />
-                <div class="text-field__message"></div>
-              </div>
-              <div class="text-field">
-                <label class="text-field__label">Номер детали*</label>
-                <input
-                  class="text-field__input"
-                  type="text"
-                  name="email"
-                  id="email"
-                  required
-                />
-                <div class="text-field__message"></div>
-              </div>
+      <div class="page__main" id="page__main">
+        <div class="container">
+          <div class="main__content">
+            <div class="info__programs">
+              <h1>Сдать программу в архив:</h1>
+              <form class="block_form" id="form" action="#" novalidate>
+                <div class="text-field">
+                  <label class="text-field__label" for="firstname"
+                    >Номер УП*</label
+                  >
+                  <input
+                    class="text-field__input"
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    required
+                  />
+                  <div class="text-field__message"></div>
+                </div>
+                <div class="text-field">
+                  <label class="text-field__label" for="firstname"
+                    >Номер операции*</label
+                  >
+                  <input
+                    class="text-field__input"
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    required
+                  />
+                  <div class="text-field__message"></div>
+                </div>
+                <div class="text-field">
+                  <label class="text-field__label">Номер детали*</label>
+                  <input
+                    class="text-field__input"
+                    type="text"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                  <div class="text-field__message"></div>
+                </div>
 
-              <div class="text-field">
-                <label class="text-field__label" for="number"
-                  >Кадры программы:</label
-                >
-                <textarea
-                  class="text-field__textarea"
-                  cols="61"
-                  rows="10"
-                  placeholder="Programm text"
-                ></textarea>
-                <div class="text-field__message"></div>
-              </div>
-              <button type="submit">Сохранить</button>
-            </form>
+                <div class="text-field">
+                  <label class="text-field__label" for="number"
+                    >Кадры программы:</label
+                  >
+                  <textarea
+                    class="text-field__textarea"
+                    cols="61"
+                    rows="10"
+                    placeholder="Programm text"
+                  ></textarea>
+                  <div class="text-field__message"></div>
+                </div>
+                <button type="submit">Сохранить</button>
+              </form>
+            </div>
+            <div class="saved__programs">
+              <table class="table_blur">
+                <tr>
+                  <th>Деталь</th>
+                  <th>Номер УП</th>
+                  <th class="model">Модель оборудования</th>
+                  <th class="tab_number">Табельный номер</th>
+                  <th class="data_creation">Дата создания</th>
+                </tr>
+                <tr>
+                  <td>75320-2919232</td>
+                  <td>11122333</td>
+                  <td>BTN-13A</td>
+                  <td>49870</td>
+                  <td>11.08.2022 13:30</td>
+                </tr>
+                <tr>
+                  <td>75315-2405304</td>
+                  <td>222333666</td>
+                  <td>TSN-13</td>
+                  <td>49870</td>
+                  <td>11.08.2022 13:30</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
           </div>
-          <div class="saved__programs">
-            <table class="table_blur">
-              <tr>
-                <th>Деталь</th>
-                <th>Номер УП</th>
-                <th>Модель оборудования</th>
-                <th>Табельный номер</th>
-                <th>Дата создания</th>
-              </tr>
-              <tr>
-                <td>75320-2919232</td>
-                <td>11122333</td>
-                <td>BTN-13A</td>
-                <td>49870</td>
-                <td>11.08.2022 13:30</td>
-              </tr>
-              <tr>
-                <td>75315-2405304</td>
-                <td>222333666</td>
-                <td>TSN-13</td>
-                <td>49870</td>
-                <td>11.08.2022 13:30</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </table>
+        </div>
+      </div>
+
+      <!------------------------------- page add -->
+      <div class="page__add" id="page__add">
+        <div class="container">
+          <div class="main__content">
+            <div class="info__programs">
+              <h1>Вход:</h1>
+              <form class="block_form__add" id="form__add" novalidate>
+                <div class="text-field">
+                  <label class="text-field__label" for="firstnameAdd"
+                    >Табельный номер*</label
+                  >
+                  <input
+                    class="text-field__input"
+                    type="number"
+                    name="firstnameAdd"
+                    id="firstnameAdd"
+                    required
+                  />
+                  <div class="text-field__message"></div>
+                </div>
+                <div class="text-field">
+                  <label class="text-field__label" for="firstnameAdd"
+                    >Пароль*</label
+                  >
+                  <input
+                    class="text-field__input"
+                    type="password"
+                    name="firstnameAdd"
+                    id="firstnameAdd"
+                    required
+                  />
+                  <div class="text-field__message"></div>
+                </div>
+                <button class="button__add" type="">Войти</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------ registration -->
+      <div class="page__registration" id="page__registration">
+        <div class="container">
+          <div class="main__content">
+            <div class="info__programs">
+              <h1>Регистрация:</h1>
+              <form class="block_form" id="form__reg" action="#" novalidate>
+                <div class="text-field">
+                  <label class="text-field__label" for="firstnameReg"
+                    >Табельный номер*</label
+                  >
+                  <input
+                    class="text-field__input"
+                    type="number"
+                    name="firstnameReg"
+                    id="firstnameReg"
+                    required
+                  />
+                  <div class="text-field__message"></div>
+                </div>
+                <div class="text-field">
+                  <label class="text-field__label" for="firstnameReg"
+                    >Имя сотрудника*</label
+                  >
+                  <input
+                    class="text-field__input"
+                    type="text"
+                    name="firstnameReg"
+                    id="firstnameReg"
+                    required
+                  />
+                  <div class="text-field__message"></div>
+                </div>
+                <div class="text-field">
+                  <label class="text-field__label" for="firstnameReg"
+                    >Фамилия сотрудника*</label
+                  >
+                  <input
+                    class="text-field__input"
+                    type="text"
+                    name="firstnameReg"
+                    id="firstnameReg"
+                    required
+                  />
+                  <div class="text-field__message"></div>
+                </div>
+                <div class="text-field">
+                  <label class="text-field__label" for="firstnameReg"
+                    >Отчество сотрудника*</label
+                  >
+                  <input
+                    class="text-field__input"
+                    type="text"
+                    name="firstnameReg"
+                    id="firstnameReg"
+                    required
+                  />
+                  <div class="text-field__message"></div>
+                </div>
+                <div class="text-field">
+                  <label class="text-field__label" for="firstnameReg"
+                    >Должность*</label
+                  >
+                  <input
+                    class="text-field__input"
+                    type="text"
+                    name="firstnameReg"
+                    id="firstnameReg"
+                    required
+                  />
+                  <div class="text-field__message"></div>
+                </div>
+                <div class="text-field">
+                  <label class="text-field__label" for="firstnameReg"
+                    >Почта</label
+                  >
+                  <input
+                    class="text-field__input"
+                    type="email"
+                    name="firstnameReg"
+                    id="firstnameReg"
+                  />
+                  <div class="text-field__message"></div>
+                </div>
+                <div class="text-field">
+                  <label class="text-field__label" for="firstnameReg"
+                    >Пароль*</label
+                  >
+                  <input
+                    class="text-field__input"
+                    type="password"
+                    name="firstnameReg"
+                    id="firstnameReg"
+                    required
+                  />
+                  <div class="text-field__message"></div>
+                </div>
+                <div class="text-field">
+                  <label class="text-field__label" for="firstnameReg"
+                    >Повтор пароля*</label
+                  >
+                  <input
+                    class="text-field__input"
+                    type="password"
+                    name="firstnameReg"
+                    id="firstnameReg"
+                    required
+                  />
+                  <div class="text-field__message"></div>
+                </div>
+                <button class="button" >Регистрация</button>
+              </form>
+              <a href="#" class="link_account__reg"
+                >«Have account yet? Log in»
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -184,10 +346,23 @@
     <!-- ========================Footer -->
 
     <div class="footer">
-      <a name="contacts"></a>
       <div class="container">
         <div class="footer__container">
-          <h1>ОАО «БЕЛАЗ» — управляющая компания холдинга «БЕЛАЗ-ХОЛДИНГ»</h1>
+          <div class="social">
+            <a
+              target="_blank"
+              href="https://github.com/Viziter25"
+              class="social__item"
+            >
+              <img src="./fonts/github.png" height="22" alt="" />
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/Viziter25"
+              class="social_link"
+              >GitHub Злотник Илья
+            </a>
+          </div>
         </div>
       </div>
     </div>
